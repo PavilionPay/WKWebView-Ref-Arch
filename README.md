@@ -18,15 +18,8 @@ to how its containing WKWebView is presented, but for purposes of this app is is
 is easy to restart the flow again, and also to clearly see which views are native code and which are web views.
 
 The first screen after launching the web view is a dummy operator screen whose purpose is to create and launch a valid
-VIP Connect session. Default values are provided but can be modified.
-
-If you have obtained a session id from somewhere outside the app, you may simply enter it in the provided field and launch
-VIP Connect with that session.
-
-Otherwise, you will need to create a session in-app. The landing screen in the web view provides a button that will
-create a session based on the current values for the `apiBaseUrl` and `transactionAmount` in the form.
-
-In both cases, a VIP Connect instance will be launched at the given `sdkBaseUrl` with the given `redirectUrl`.
+VIP Connect session. Default values are provided but can be modified. The landing screen in the web view provides a button that will
+create a VIP Connect session based on the current values for the `apiBaseUrl` and `sdkBaseUrl` in the form.
 
 The VIP Connect SDK will load the session into the webview and display a funding page. From here, the Plaid integration
 to the VIP Connect SDK can be tested.
@@ -44,7 +37,7 @@ VIP Connect UI where transactions may continue.
 ## Plaid Redirect URL
 
 Upon completion of the bank\'s OAuth UI, and Plaid has gotten the credentials it needs, the user will need to be put back into the Plaid UI to
-complete the connection of the bank account. The `redirectUrl` provided should lead to a page that is capable of restoring the VIP SDK session;
+complete the connection of the bank account. The `redirectUrl` provided by Pavilion will lead to a page that is capable of restoring the VIP SDK session;
 the default url will do this automatically for the user so they are brought back to the Plaid UI after OAuth is complete.
 
 ## Handling OAuth Flows Outside of the WebView
