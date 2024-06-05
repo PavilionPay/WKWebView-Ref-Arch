@@ -72,7 +72,7 @@
                 var apiBaseUrl = document.getElementById("apiBaseUrl").value;
                 var social = document.getElementById("idNumber").value;
                 
-                const token = "";
+                const token = "<#PUT OPERATOR TOKEN HERE#>";
                 
                 const requestOptions = {
                     method: "POST",
@@ -109,12 +109,12 @@
                     }),
                 };
                 
-                document.getElementById("loadingDiv").classList.remove("hide");
-                
                 if (token == "") {
-                    document.getElementById("message").innerText = "Missing Bearer Token"
+                    document.getElementById("message").innerText = "Missing Bearer Token; please update the source html file to include it."
                     return
                 }
+
+                document.getElementById("loadingDiv").classList.remove("hide");
                 
                 window
                 .fetch("https://corsproxy.io/?" + encodeURIComponent(apiBaseUrl), requestOptions)

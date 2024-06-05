@@ -16,7 +16,6 @@
 		BE22F7412BBC59D100DC1A3B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22F7402BBC59D100DC1A3B /* WebViewController.swift */; };
 		BE22F7432BBC5EA600DC1A3B /* sessionCreationExistingUser.html in Resources */ = {isa = PBXBuildFile; fileRef = BE22F7422BBC5EA600DC1A3B /* sessionCreationExistingUser.html */; };
 		BE22F7472BC0374F00DC1A3B /* sessionCreationNewUser.html in Resources */ = {isa = PBXBuildFile; fileRef = BE22F7462BC0374F00DC1A3B /* sessionCreationNewUser.html */; };
-		D1DCC0D82BD03169009D6E7D /* token.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1DCC0D72BD03169009D6E7D /* token.txt */; };
 		D1E390662BCD846F00DBD172 /* vipOnlineExistingUser.html in Resources */ = {isa = PBXBuildFile; fileRef = D1E390642BCD7C2200DBD172 /* vipOnlineExistingUser.html */; };
 		D1E390672BCD847200DBD172 /* vipOnlineNewUser.html in Resources */ = {isa = PBXBuildFile; fileRef = D1E390652BCD7C2200DBD172 /* vipOnlineNewUser.html */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		BE22F7422BBC5EA600DC1A3B /* sessionCreationExistingUser.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sessionCreationExistingUser.html; sourceTree = "<group>"; };
 		BE22F7452BBF040A00DC1A3B /* WebSDKTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebSDKTester.entitlements; sourceTree = "<group>"; };
 		BE22F7462BC0374F00DC1A3B /* sessionCreationNewUser.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sessionCreationNewUser.html; sourceTree = "<group>"; };
-		D1DCC0D72BD03169009D6E7D /* token.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
 		D1E390642BCD7C2200DBD172 /* vipOnlineExistingUser.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = vipOnlineExistingUser.html; sourceTree = "<group>"; };
 		D1E390652BCD7C2200DBD172 /* vipOnlineNewUser.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = vipOnlineNewUser.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +80,6 @@
 				BE22F7462BC0374F00DC1A3B /* sessionCreationNewUser.html */,
 				D1E390642BCD7C2200DBD172 /* vipOnlineExistingUser.html */,
 				D1E390652BCD7C2200DBD172 /* vipOnlineNewUser.html */,
-				D1DCC0D72BD03169009D6E7D /* token.txt */,
 				BE22F72E2BB70B1600DC1A3B /* Assets.xcassets */,
 				BE22F7332BB70B1600DC1A3B /* Info.plist */,
 			);
@@ -147,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DCC0D82BD03169009D6E7D /* token.txt in Resources */,
 				BE22F7322BB70B1600DC1A3B /* LaunchScreen.storyboard in Resources */,
 				BE22F72F2BB70B1600DC1A3B /* Assets.xcassets in Resources */,
 				D1E390672BCD847200DBD172 /* vipOnlineNewUser.html in Resources */,

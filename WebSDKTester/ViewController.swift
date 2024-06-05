@@ -7,6 +7,15 @@
 
 import UIKit
 
+/**
+ A shell ViewController that can launch specified WebViewControllers in a popup sheet.
+ 
+ This screen exists mostly to provide a clear delineation between views that are native iOS code,
+ and views that are being shown in WebViews.
+ 
+ Views shown from this screen are displayed in WebViews that are presented in popup overlay sheets;
+ the sheet can be dismissed by sliding down to close the WebView and return to this screen.
+ */
 class ViewController: UIViewController {
     
     @IBAction func launchWebViewExistingUser() {
@@ -24,8 +33,6 @@ class ViewController: UIViewController {
     @IBAction func vipOnlineNewUser() {
         launchWebView(with: "vipOnlineNewUser")
     }
-    
-    
     
     private func launchWebView(with pageName: String) {
         let viewControllerToPresent = WebViewController()
